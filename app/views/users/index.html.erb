@@ -1,0 +1,25 @@
+<form action="/create" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    
+    <label for="name">Your Name: </label>
+    <input type="text" name="user[name]" id="name"><br>
+
+    <label for="location">Dojo Location: </label>
+    <select name="user[location]" id="location">
+        <option value="Philippines">Philippines</option>
+        <option value="Japan">Japan</option>
+        <option value="Singapore">Singapore</option>
+    </select><br>
+
+    <label for="language">Dojo Location: </label>
+    <select name="user[language]" id="language">
+        <option value="PHP">PHP</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Java">Java</option>
+    </select><br>
+
+    <label for="comment">Comment(optional): </label>
+    <textarea name="user[comment]" id="comment" rows="5" col="10"></textarea><br>
+
+    <input type="submit" value="Submit">
+</form>

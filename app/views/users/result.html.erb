@@ -1,0 +1,21 @@
+<div class="container">
+<% if flash[:submitted] %>
+    <h4 id="success"> <%= flash[:submitted] %> </h4>
+<% end %>
+
+<h3>Submitted Information:</h3>
+<ul>
+<% session[:user].each do |user| %>
+    <li> <%= user.first.capitalize %>: <%= user.second %></li>
+<% end %>
+</ul>
+<a href="/">Go Back</a>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    //hide fadeout flashmessages
+    $(document).ready(function(){
+            var timeout = 2000; // in miliseconds
+            $('#success').delay(timeout).fadeOut(300);
+        });
+</script>

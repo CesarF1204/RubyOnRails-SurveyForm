@@ -1,0 +1,79 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+form {
+    border: 5px solid black;
+    width: 400px;
+    display: block;
+    margin: auto;
+    padding: 40px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+    margin-top: 50px;
+}
+form input, form select, label, textarea {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    width: 300px;
+}
+form select {
+    width: 315px;
+    text-align-last: center;
+}
+
+input[type=submit] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #2b78e4;
+    border: 1px solid black;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px #000;
+}
+input[type=submit]:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+.container {
+	border: 5px solid black;
+    width: 450px;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+}
+#success {
+    color: green;
+}
+ul li {
+    list-style: none;
+    font-size: 20px;
+    margin-left: -30px;
+}
+ul {
+    margin-bottom: 30px;
+}
+a {
+    background-color: red;
+    border: 1px solid black;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px #000;
+}
